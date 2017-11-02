@@ -1,0 +1,288 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "PFBeausanspro-light";
+  /* Имя шрифта */
+  src: url("assets/public/fonts/pfbeausanspro-light.ttf");
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: "PFBeausanspro-regular";
+  /* Имя шрифта */
+  src: url("assets/public/fonts/pfbeausanspro-reg.ttf");
+  /* Путь к файлу со шрифтом */ }
+
+@font-face {
+  font-family: "PFBeausanspro-thin";
+  /* Имя шрифта */
+  src: url("assets/public/fonts/pfbeausanspro-thin.ttf");
+  /* Путь к файлу со шрифтом */ }
+
+* {
+  font-family: inherit;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0; }
+
+a, a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+textarea {
+  resize: none; }
+
+h1 {
+  margin: 0; }
+
+h2 {
+  margin: 0; }
+
+h3 {
+  margin: 0; }
+
+h4 {
+  margin: 0; }
+
+h5 {
+  margin: 0; }
+
+h6 {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+ul {
+  flex-direction: inherit;
+  display: inherit; }
+
+li {
+  list-style: none; }
+
+input, textarea {
+  border-style: solid;
+  border-width: 1px; }
+
+body {
+  border-top: 8px solid #58595b;
+  margin: 0;
+  font-family: "PFBeausanspro-regular", sans-serif;
+  color: #4a4a4b; }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1287px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: inherit; }
+
+.logo {
+  max-width: 368px;
+  width: 100%;
+  text-align: right; }
+  .logo__img {
+    background-image: url("assets/public/images/logo.png");
+    height: 85px;
+    width: 250px; }
+  .logo__text {
+    color: #58595b;
+    font-size: 17px; }
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22%;
+  align-items: center;
+  color: #58595b; }
+  .contacts__phone {
+    font-size: 26px; }
+  .contacts__address {
+    font-size: 19px; }
+
+.top-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 49%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-end; }
+  .top-menu__container {
+    justify-content: space-between;
+    width: 100%; }
+  .top-menu__item {
+    width: 110px;
+    font-size: 14px;
+    color: #a3a3a3;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+  .top-menu__icon {
+    font-size: 25px;
+    color: #d8262e;
+    margin-right: 10px;
+    cursor: pointer; }
+
+.nav-menu {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  width: 48%; }
+  .nav-menu__container {
+    width: 100%;
+    justify-content: space-around;
+    font-weight: bold; }
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 140px; }
+
+.map__content {
+  width: 100%;
+  height: 400px; }
+
+.sidebar {
+  position: fixed;
+  width: 80px;
+  display: flex;
+  top: 0; }
+  .sidebar__services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    background: -webkit-linear-gradient(#d8262e, #0e4675);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d8262e, #0e4675);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d8262e, #0e4675);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d8262e, #0e4675);
+    /* Standard syntax */ }
+    .sidebar__services-item {
+      display: block;
+      width: 50px;
+      height: auto; }
+    .sidebar__services-item__icon {
+      height: 50px;
+      width: 100%;
+      display: block;
+      background-size: 100% 100%;
+      margin: 9px 0; }
+
+.cardio-service-icon {
+  background-image: url("assets/public/images/cardiogram-icon.png"); }
+
+.first-aid-service-icon {
+  background-image: url("assets/public/images/first-aid-kit-icon.png"); }
+
+.medical-service-icon {
+  background-image: url("assets/public/images/medical-result-icon.png"); }
+
+.chat-service-icon {
+  background-image: url("assets/public/images/chat-icon.png"); }
+
+.note-service-icon {
+  background-image: url("assets/public/images/note-icon.png"); }
+
+.bed-service-icon {
+  background-image: url("assets/public/images/bed-icon.png"); }
+
+.youtube-icon {
+  background-image: url("assets/public/images/youtube-icon.png"); }
+
+.facebook-icon {
+  background-image: url("assets/public/images/facebook-icon.png"); }
+
+.instagram-icon {
+  background-image: url("assets/public/images/instagram-icon.png"); }
+
+.info-about-doctor {
+  background-image: url("assets/public/images/doctor.png");
+  background-position: -158% 70%;
+  background-size: contain;
+  background-color: #0e4675; }
+  .info-about-doctor__container {
+    max-width: 644px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: auto;
+    padding: 0 0 0 20px;
+    color: #fff; }
+    .info-about-doctor__container__item {
+      margin: 20px 0; }
+  .info-about-doctor__title {
+    font-size: 55px;
+    margin: 94px 0 54px 0;
+    font-family: "PFBeausanspro-thin";
+    font-weight: 100;
+    max-width: 440px; }
+
+.biography__title {
+  font-size: 45px;
+  font-family: PFBeausanspro-thin;
+  background: linear-gradient(90deg, #d8262e 13%, #0e4675 34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.biography__item {
+  max-width: 467px; }
+
+.biography__main-info {
+  max-width: 467px; }
+  .biography__main-info__item:nth-child(2) {
+    margin: 30px 0; }
+  .biography__main-info__content {
+    margin: 30px 0; }
+    .biography__main-info__content__list__item {
+      list-style: disc;
+      color: #d8262e; }
+      .biography__main-info__content__list__item-text {
+        color: #58595b; }
+
+.quote__element {
+  font-size: 48px;
+  color: #d8262e; }
+
+.signing-container {
+  background-image: url("assets/public/images/form-bg.jpg"); }
+  .signing-container__title {
+    background: linear-gradient(90deg, #d8262e 13%, #0e4675 34%);
+    font-family: PFBeausanspro-thin;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px; }
+
+.search-button {
+  width: 50px; }
+
+.language--switcher {
+  width: 35px;
+  height: 19px;
+  padding: 4px 0;
+  background-color: #fafafa;
+  cursor: pointer; }
+  .language--switcher:hover {
+    background-color: #f3f3f3;
+    color: #d8262e; }
+
+.back--button {
+  margin-top: 90px; }
+
+.biography--container {
+  max-width: 971px;
+  padding-top: 70px;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 500px; }
+
+.quote--text {
+  font-size: 20px;
+  font-style: italic;
+  color: #a3a3a3;
+  line-height: 50px;
+  margin: 35px 0 45px 0;
+  max-width: 467px; }

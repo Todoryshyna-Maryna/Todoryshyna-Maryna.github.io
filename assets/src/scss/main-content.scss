@@ -1,0 +1,76 @@
+.info-about-doctor {
+  background-image: url("assets/public/images/doctor.png");
+  background-position: -158% 70%;
+  background-size: contain;
+  background-color: map_get($colors, blue);
+
+  &__container {
+    max-width: 644px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: auto;
+    padding: 0 0 0 20px;
+    color: map_get($colors, white);
+    &__item {
+      margin: 20px 0;
+    }
+  }
+
+  &__title {
+    font-size: 55px;
+    margin: 94px 0 54px 0;
+    font-family: "PFBeausanspro-thin";
+    font-weight: 100;
+    max-width: 440px;
+  }
+}
+
+.biography {
+  &__title {
+    font-size: 45px;
+    font-family: PFBeausanspro-thin;
+    background: linear-gradient(90deg, map_get($colors, accent-red) 13%, map-get($colors, blue) 34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__item {
+    max-width: 467px;
+  }
+
+  &__main-info {
+    max-width: 467px;
+    &__item:nth-child(2) {
+      margin: 30px 0;
+    }
+    &__content {
+      margin: 30px 0;
+      &__list__item {
+        list-style: disc;
+        color: map_get($colors, accent-red);
+        &-text {
+          color: map_get($colors, gray);
+        }
+      }
+    }
+
+  }
+}
+
+.quote__element {
+  font-size: 48px;
+  color: map_get($colors, accent-red);
+}
+
+
+.signing-container {
+  background-image: url("assets/public/images/form-bg.jpg");
+  &__title {
+    background: linear-gradient(90deg, map_get($colors, accent-red) 13%, map-get($colors, blue) 34%);
+    font-family: PFBeausanspro-thin;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+  }
+}

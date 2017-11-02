@@ -1,0 +1,36 @@
+.search-button {
+  width: 50px;
+}
+
+.language--switcher {
+  width: 35px;
+  height: 19px;
+  padding: 4px 0;
+  background-color: map_get($colors, white-gray-light);
+  cursor: pointer;
+  &:hover{
+    background-color: map_get($colors, white-gray);
+    color: map_get($colors, accent-red);
+  }
+}
+
+.back--button {
+  margin-top: 90px;
+}
+
+.biography--container {
+  max-width: 971px;
+  padding-top: 70px;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 500px;
+}
+
+.quote--text {
+  font-size: 20px;
+  font-style: italic;
+  color: map_get($colors, gray-light);
+  line-height: 50px;
+  margin: 35px 0 45px 0;
+  max-width: 467px;
+}
