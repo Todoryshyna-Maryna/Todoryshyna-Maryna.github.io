@@ -1,0 +1,66 @@
+
+.sidebar {
+  position: fixed;
+  width: 80px;
+  display: flex;
+  top: 0;
+  &__services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    background: -webkit-linear-gradient(map_get($colors,accent-red), map_get($colors,blue)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(map_get($colors,accent-red), map_get($colors,blue)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(map_get($colors,accent-red), map_get($colors,blue)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(map_get($colors,accent-red), map_get($colors,blue)); /* Standard syntax */;
+    &-item {
+      display: block;
+      width: 50px;
+      height: auto;
+    }
+    &-item__icon {
+      height: 50px;
+      width: 100%;
+      display: block;
+      background-size: 100% 100%;
+      margin: 9px 0;
+    }
+  }
+}
+
+.cardio-service-icon {
+  background-image: url("assets/public/images/cardiogram-icon.png");
+}
+
+.first-aid-service-icon {
+  background-image: url("assets/public/images/first-aid-kit-icon.png");
+}
+
+.medical-service-icon {
+  background-image: url("assets/public/images/medical-result-icon.png");
+}
+
+.chat-service-icon {
+  background-image: url("assets/public/images/chat-icon.png");
+}
+
+.note-service-icon {
+  background-image: url("assets/public/images/note-icon.png");
+}
+
+.bed-service-icon {
+  background-image: url("assets/public/images/bed-icon.png");
+}
+
+.youtube-icon {
+  background-image: url("assets/public/images/youtube-icon.png");
+}
+
+.facebook-icon {
+  background-image: url("assets/public/images/facebook-icon.png");
+}
+
+.instagram-icon {
+  background-image: url("assets/public/images/instagram-icon.png");
+}
