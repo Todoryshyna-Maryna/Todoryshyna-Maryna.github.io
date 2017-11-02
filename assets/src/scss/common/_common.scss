@@ -1,0 +1,45 @@
+body {
+  border-top: 8px solid map_get($colors, gray);
+  margin: 0;
+  font-family: "PFBeausanspro-regular", sans-serif;
+  color: map_get($colors, dark-gray);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1287px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: inherit;
+}
+
+.logo {
+  max-width: 368px;
+  width: 100%;
+  text-align: right;
+  &__img{
+    background-image: url("assets/public/images/logo.png");
+    height: 85px;
+    width: 250px;
+  }
+  &__text{
+    color: map_get($colors, gray);
+    font-size: 17px;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22%;
+  align-items: center;
+  color: map_get($colors, gray);
+  &__phone {
+    font-size: 26px;
+  }
+  &__address {
+    font-size: 19px;
+  }
+}
