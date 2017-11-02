@@ -1,0 +1,38 @@
+.top-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 49%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+  &__container {
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__item {
+    width: 110px;
+    font-size: 14px;
+    color: map_get($colors, gray-light);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  &__icon {
+    font-size: 25px;
+    color: map_get($colors, accent-red);
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  width: 48%;
+  &__container {
+    width: 100%;
+    justify-content: space-around;
+    font-weight: bold;
+  }
+}
