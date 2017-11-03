@@ -9,7 +9,7 @@ var path = {
 
     src: {
         scss: './assets/src/scss/',
-        js: './assets/src/javascript/'
+        js: './assets/src/js/'
     },
 
     public: {

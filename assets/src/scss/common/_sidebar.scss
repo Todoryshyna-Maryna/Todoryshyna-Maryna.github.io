@@ -1,9 +1,10 @@
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   width: 80px;
   display: flex;
-  top: 0;
+  top: 148px;
+  color: map-get($colors, white);
   &__services {
     display: flex;
     flex-direction: column;
@@ -14,14 +15,20 @@
     background: -o-linear-gradient(map_get($colors,accent-red), map_get($colors,blue)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(map_get($colors,accent-red), map_get($colors,blue)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(map_get($colors,accent-red), map_get($colors,blue)); /* Standard syntax */;
+    &__title {
+      font-size: 20px;
+      font-weight: 100;
+      font-family: PFBeausanspro-thin;
+    }
+
     &-item {
-      display: block;
+      display: flex;
       width: 50px;
       height: auto;
     }
     &-item__icon {
       height: 50px;
-      width: 100%;
+      width: 65px;
       display: block;
       background-size: 100% 100%;
       margin: 9px 0;
