@@ -60,7 +60,8 @@ li {
 
 input, textarea {
   border-style: solid;
-  border-width: 1px; }
+  border-width: 1px;
+  border-color: #a3a3a3; }
 
 body {
   border-top: 8px solid #58595b;
@@ -74,7 +75,9 @@ body {
   max-width: 1287px;
   width: 100%;
   margin: 0 auto;
-  justify-content: inherit; }
+  justify-content: inherit;
+  flex-direction: inherit;
+  align-items: inherit; }
 
 .logo {
   max-width: 368px;
@@ -99,6 +102,9 @@ body {
     font-size: 26px; }
   .contacts__address {
     font-size: 19px; }
+
+.map {
+  height: 398px; }
 
 .top-menu {
   display: flex;
@@ -138,15 +144,34 @@ body {
   align-items: center;
   height: 140px; }
 
+.footer {
+  background-color: #58595b;
+  color: #fff;
+  padding-top: 30px;
+  height: 170px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .footer__license {
+    background-color: #4a4a4b;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 100;
+    font-family: PFBeausanspro-thin;
+    width: 100%;
+    align-self: flex-end; }
+
 .map__content {
   width: 100%;
   height: 400px; }
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   width: 80px;
   display: flex;
-  top: 0; }
+  top: 148px;
+  color: #fff; }
   .sidebar__services {
     display: flex;
     flex-direction: column;
@@ -161,13 +186,17 @@ body {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(#d8262e, #0e4675);
     /* Standard syntax */ }
+    .sidebar__services__title {
+      font-size: 20px;
+      font-weight: 100;
+      font-family: PFBeausanspro-thin; }
     .sidebar__services-item {
-      display: block;
+      display: flex;
       width: 50px;
       height: auto; }
     .sidebar__services-item__icon {
       height: 50px;
-      width: 100%;
+      width: 65px;
       display: block;
       background-size: 100% 100%;
       margin: 9px 0; }
@@ -248,13 +277,51 @@ body {
   color: #d8262e; }
 
 .signing-container {
-  background-image: url("assets/public/images/form-bg.jpg"); }
+  background-image: url("assets/public/images/form-bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 130px 0;
+  padding-right: 160px; }
   .signing-container__title {
     background: linear-gradient(90deg, #d8262e 13%, #0e4675 34%);
     font-family: PFBeausanspro-thin;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 45px; }
+  .signing-container__text {
+    margin: 30px 0;
+    max-width: 420px; }
+
+.signing-form {
+  flex-wrap: wrap;
+  display: flex;
+  max-width: 485px;
+  width: 100%; }
+  .signing-form__input, .signing-form__select {
+    padding: 17px 23px;
+    width: 100%;
+    margin: 10px 0; }
+    .signing-form__input::placeholder, .signing-form__select::placeholder {
+      color: #a3a3a3; }
+  .signing-form__select {
+    color: #a3a3a3; }
+    .signing-form__select:before {
+      content: '';
+      border: 5px solid #0e4675; }
+  .signing-form__text {
+    width: 50%;
+    align-self: center; }
+  .signing-form__button {
+    border: none;
+    border-radius: 50px;
+    width: 172px;
+    height: 45px;
+    background-color: #d8262e;
+    color: #fff;
+    font-size: 15px;
+    margin: 35px auto; }
 
 .search-button {
   width: 50px; }
@@ -286,3 +353,132 @@ body {
   line-height: 50px;
   margin: 35px 0 45px 0;
   max-width: 467px; }
+
+.date--button {
+  width: 40%;
+  align-self: flex-end; }
+
+.logo-img--footer {
+  background-image: url("assets/public/images/logo-white.png"); }
+
+.contacts--footer {
+  color: #fff; }
+
+.logo--footer {
+  width: 25%; }
+
+@media screen and (min-width: 1389px) {
+  .info-about-doctor {
+    background-position: -350px 70%;
+    background-size: contain; } }
+
+@media screen and (max-width: 1328px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 190px; }
+  .nav-menu {
+    margin: 10px auto;
+    flex-wrap: wrap;
+    max-width: 510px; }
+  .top-menu {
+    margin: 10px auto;
+    flex-wrap: wrap;
+    max-width: 510px; }
+  .contacts {
+    margin: auto;
+    align-items: center; }
+  .sidebar {
+    position: relative;
+    top: 0;
+    width: 100%; }
+    .sidebar__services {
+      flex-direction: row;
+      justify-content: space-around; }
+  .info-about-doctor {
+    background-position: -180px 50%;
+    background-size: 54%; } }
+
+@media screen and (max-width: 1130px) {
+  .contacts {
+    width: 30%;
+    font-size: 1.5em; } }
+
+@media screen and (max-width: 1048px) {
+  .sidebar {
+    top: 0;
+    position: relative; }
+  .info-about-doctor {
+    background-position: 50% 15px;
+    margin-top: 2px;
+    padding-top: 360px; }
+    .info-about-doctor__title {
+      margin: 5px 0 5px 0; }
+    .info-about-doctor__container {
+      max-width: 485px;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      margin: auto; }
+      .info-about-doctor__container__item {
+        width: 100%; }
+  .back--button {
+    margin-top: 0; }
+  .biography--container {
+    height: auto;
+    align-items: center; }
+  .signing-container {
+    background-position: 50%; }
+  .footer {
+    flex-direction: column;
+    height: auto; }
+  .logo--footer {
+    width: 100%; }
+  .logo-img--footer {
+    margin: auto; }
+  .contacts--footer {
+    width: 100%;
+    margin: 10px auto; }
+  .nav-menu--footer {
+    width: 100%;
+    margin: 30px auto; }
+  .signing-container {
+    padding: 0;
+    align-items: center; } }
+
+@media all and (max-width: 660px) {
+  .header {
+    height: auto;
+    justify-content: center; }
+  .logo {
+    width: 100%;
+    justify-content: center; }
+    .logo__text {
+      display: flex;
+      justify-content: center;
+      margin: 5px 0 20px 0; }
+  .contacts, .top-menu, .nav-menu {
+    width: 100%;
+    flex-wrap: wrap; }
+  .top-menu {
+    padding: 0 10px; }
+  .sidebar {
+    height: 290px;
+    width: 100%;
+    position: relative;
+    top: 0; }
+    .sidebar__services {
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .sidebar__services__title {
+        width: 100%;
+        text-align: center;
+        margin: auto; }
+      .sidebar__services-item {
+        width: 30%;
+        justify-content: center; }
+      .sidebar__services-item__icon {
+        background-size: contain; } }
