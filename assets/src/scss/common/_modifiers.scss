@@ -34,3 +34,20 @@
   margin: 35px 0 45px 0;
   max-width: 467px;
 }
+
+.date--button {
+  width: 40%;
+  align-self: flex-end;
+}
+
+.logo-img--footer {
+  background-image: url("assets/public/images/logo-white.png");;
+}
+
+.contacts--footer {
+  color: map_get($colors, white);
+}
+
+.logo--footer{
+  width: 25%;
+}

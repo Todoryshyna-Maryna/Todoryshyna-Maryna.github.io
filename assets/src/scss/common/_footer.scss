@@ -1,3 +1,24 @@
+
+.footer {
+  background-color: map_get($colors, gray);
+  color: map_get($colors, white);
+  padding-top: 30px;
+  height: 170px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__license {
+    background-color: map_get($colors, dark-gray);
+    color: map_get($colors, white);
+    padding: 10px 0;
+    font-weight: 100;
+    font-family: PFBeausanspro-thin;
+    width: 100%;
+    align-self: flex-end;
+  }
+}
+
 .map__content {
   width: 100%;
   height: 400px;

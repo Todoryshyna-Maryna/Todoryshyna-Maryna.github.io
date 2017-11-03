@@ -12,6 +12,8 @@ body {
   width: 100%;
   margin: 0 auto;
   justify-content: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
 }
 
 .logo {
@@ -42,4 +44,8 @@ body {
   &__address {
     font-size: 19px;
   }
+}
+
+.map {
+  height: 398px;
 }
