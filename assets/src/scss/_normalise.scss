@@ -36,4 +36,5 @@ li {
 input, textarea {
   border-style: solid;
   border-width: 1px;
+  border-color: map_get($colors, gray-light);
 }

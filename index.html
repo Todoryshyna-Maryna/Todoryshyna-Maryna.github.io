@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.min.css">
     <title>Heart life: Петрова Анна Семёновна</title>
 </head>
-<body>
+<body onresize="changeSidebarHeight()">
 
 <header class="header">
 
@@ -82,7 +83,7 @@
 
     <aside class="sidebar">
         <div class="sidebar__services">
-            <h5>Услуги</h5>
+            <h5 class="sidebar__services__title">Услуги</h5>
             <a href="#" class="sidebar__services-item">
                 <i class="sidebar__services-item__icon cardio-service-icon"></i>
             </a>
@@ -190,26 +191,28 @@
     </article>
 
     <article class="signing-container">
-        <h2 class="signing-container__title">Записаться на прием</h2>
-        <p class="signing-container__text">
-            Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry.
-        </p>
+        <div class="container">
+            <form class="signing-form">
+                <h2 class="signing-container__title">Записаться на прием</h2>
+                <p class="signing-container__text">
+                    Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.
+                </p>
 
-        <form class="signing-form">
-            <input type="text" placeholder="Имя">
-            <input type="tel" placeholder="Номер телелефона">
-            <input type="email" placeholder="E-mail">
-            <select>
-                <option value="1" selected>Выберите направление</option>
-                <option value="2"></option>
-            </select>
-            <span>Желаемая дата и время:</span>
-            <input type="date">
-            <button class="signing-form__button">Записаться
-                <i class="fa fa-arrow-right"></i>
-            </button>
-        </form>
+                <input type="text" placeholder="Имя" class="signing-form__input">
+                <input type="tel" placeholder="Номер телелефона" class="signing-form__input">
+                <input type="email" placeholder="E-mail" class="signing-form__input">
+                <select class="signing-form__select">
+                    <option value="1" selected>Выберите направление</option>
+                    <option value="2"></option>
+                </select>
+                <span class="signing-form__text">Желаемая дата и время:</span>
+                <input type="date" class="signing-form__input date--button">
+                <button class="signing-form__button">Записаться
+                    <i class="fa fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
     </article>
 
     <article class="map">
@@ -221,16 +224,15 @@
     <div class="container">
 
         <div class="logo logo--footer">
-            <div class="logo__img"></div>
-            <span class="logo__text">Первая частная кардиохирургия</span>
+            <div class="logo__img logo-img--footer"></div>
         </div>
 
-        <div class="contacts">
-            <span class="contacts__telephone">+38 (044) 123-45-67</span>
+        <div class="contacts contacts--footer">
+            <span class="contacts__phone">+38 (044) 123-45-67</span>
             <span class="contacts__address">г. Киев, ул. Амосова, 6</span>
         </div>
 
-        <nav class="nav-menu">
+        <nav class="nav-menu nav-menu--footer">
             <ul class="nav-menu__container">
                 <li class="nav-menu__item">
                     <a href="#">О клинике</a>
@@ -255,7 +257,9 @@
 
     </div>
     <div class="footer__license">
-        © 2017. Heart life hospital.
+        <div class="container">
+            © 2017. Heart life hospital.
+        </div>
     </div>
 </footer>
 

@@ -66,11 +66,21 @@
 
 .signing-container {
   background-image: url("assets/public/images/form-bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 130px 0;
+  padding-right: 160px;
   &__title {
     background: linear-gradient(90deg, map_get($colors, accent-red) 13%, map-get($colors, blue) 34%);
     font-family: PFBeausanspro-thin;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 45px;
+  }
+  &__text {
+    margin: 30px 0;
+    max-width: 420px;
   }
 }
